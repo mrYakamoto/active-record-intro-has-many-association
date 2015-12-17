@@ -26,6 +26,14 @@ Dog.find_or_create_by(name: "Eleanor") do |dog|
   dog.owner_id = 3
 end
 
+dat_details = {
+  name: 'Dat',
+  has_bell: false,
+  age: 6,
+  color: 'Calico'
+}
+
+Cat.create(dat_details)
 
 # Seed ratings table
 Rating.create([
